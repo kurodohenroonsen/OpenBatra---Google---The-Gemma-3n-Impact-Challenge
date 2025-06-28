@@ -32,7 +32,7 @@ Le monde est rempli d'informations opaques. Qu'il s'agisse de comprendre la comp
 | :---: | :---: | :---: |
 | <img src="assets/vision-problem-1.png" alt="generate image: a tourist looking confused at a description of a local service written in a foreign language. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> | <img src="assets/vision-problem-2.png" alt="generate image: a botanist in a lush jungle, trying to identify a rare flower with a mobile device that shows a 'no signal' icon. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> | <img src="assets/vision-problem-3.png" alt="generate image: a person looking overwhelmed by a dense legal document or contract, highlighting the complexity of text. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> |
 
-**Notre Solution :** Une "escouade agentique" universelle qui vit dans votre navigateur. Prenez une photo de *n'importe quel élément identifiable*, dialoguez avec l'IA, et obtenez instantanément sa fiche d'identité numérique, structurée, multilingue et partageable.
+**Notre Solution :** Une "escouade agentique" universelle qui vit dans votre navigateur. Prenez une photo de *n'importe quel élément identifiable* et, **grâce à un dialogue vivant avec notre escouade d'IA, construisez sa fiche d'identité numérique**, structurée, multilingue et partageable.
 
 ---
 
@@ -55,7 +55,7 @@ Notre force réside dans l'orchestration intelligente de Gemma 3n avec les APIs 
 
 ### Le Cœur de la Conversation : Diagramme de Séquence
 
-Voici comment nos composants interagissent en quelques secondes pour répondre à une question sur un élément identifié :
+Voici comment nos composants interagissent pour répondre à une question sur un élément identifié :
 
 <p align="center">
   <img src="assets/sequence-diagram.png" alt="generate image: a visually appealing rendering of a UML Sequence Diagram. The lifelines are: User, UI (SidePanel), VoiceOrchestrator, AppController, AI_Service. The diagram shows the flow of messages for analyzing an element. The style is 'Blue-Glow Infographic': futuristic, clean, professional, easy to read, with subtle color coding for different components. --ar 4:3">
