@@ -1,23 +1,27 @@
-# UC1: Identifier un Élément
+# UC1: Créer une Fiche d'Identité
 
 **[◀ Retour à la Vue d'Ensemble des Cas d'Utilisation](../USE_CASES.md)**
 
-Ce document fournit une analyse détaillée du cas d'utilisation principal et le plus critique du projet OpenBatra.
+Ce document fournit une analyse détaillée du cas d'utilisation principal du projet OpenBatra : la création d'une fiche d'identité numérique pour tout bien, service ou concept.
 
 ---
 
 ## 1. Description et Objectif
 
-Ce cas d'utilisation décrit le cœur de l'interaction. Un utilisateur soumet une image d'un élément (bien, service, document, etc.) et pose une question en langage naturel pour obtenir une analyse instantanée, privée et fonctionnant hors-ligne. Le système doit être entièrement pilotable à la voix pour garantir l'accessibilité.
+C'est la fonctionnalité centrale d'OpenBatra. Elle permet à n'importe quel utilisateur (un artisan, un consultant, un scientifique, un organisateur d'événement, etc.) de définir l'identité d'un élément de manière structurée. Le processus est un dialogue guidé par l'IA (Agent Orion), qui pose des questions pertinentes pour construire une fiche complète. L'utilisateur peut commencer de zéro ou accélérer le processus en analysant un élément existant (une photo, un document, une ébauche de texte).
+
+Le livrable final est un **"Pack d'Identité"** : un fichier `.zip` autonome contenant les données structurées (JSON), les images, et un micro-site web de présentation.
 
 <p align="center">
-  <img src="../../assets/uc1-detail-banner.png" alt="generate image: a detailed illustration of the 'Analyze Element' use case. A user's hand holds a phone pointed at a bottle of medicine. On the phone screen, the OpenBatra side panel is open, showing a conversation with an AI. The AI has highlighted the 'Dosage' section on the bottle's label and is providing a clear, concise summary. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 16:9">
+  <img src="../../assets/uc1-detail-banner.png" alt="generate image: a detailed illustration showing the 'Create Identity' use case. A freelance consultant is in a dialogue with the OpenBatra AI on her laptop. The AI asks 'What are the key deliverables of this service?'. The user answers vocally, and on the screen, a structured data sheet for 'Strategic Consulting Service' is being built field by field. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 16:9">
 </p>
 
 ## 2. Diagramme UML du Cas d'Utilisation
 
+Le diagramme montre que l'analyse d'un élément existant est une extension optionnelle (`<<extends>>`) du processus de création principal.
+
 <p align="center">
-  <img src="../../assets/uc1-diagram.png" alt="generate image: a clean and professional UML Use Case diagram for 'Identifier un Élément'. It shows two actors, 'Utilisateur Consommateur' and 'Utilisateur Accessibilité', connected to a central use case. This use case <<includes>> sub-tasks like 'Capturer une image', 'Poser une question vocale', 'Analyser (OCR + IA)', and 'Répondre vocalement'. The style is 'Blue-Glow Infographic'. --ar 16:9">
+  <img src="../../assets/uc1-diagram.png" alt="generate image: a clean and professional UML Use Case diagram for 'Créer une Fiche d'Identité'. The main use case is central. It shows an <<extends>> relationship to another use case named 'Analyser un Élément Existant pour pré-remplir'. The actor 'Utilisateur' is connected to the main creation use case. The style is 'Blue-Glow Infographic'. --ar 16:9">
 </p>
 
 ## 3. Informations Détaillées
@@ -25,59 +29,61 @@ Ce cas d'utilisation décrit le cœur de l'interaction. Un utilisateur soumet un
 | Champ | Description |
 | :--- | :--- |
 | **ID** | UC1 |
-| **Nom** | Identifier un Élément |
-| **Acteurs** | `Utilisateur Consommateur`, `Utilisateur Accessibilité` |
-| **Déclencheur** | L'utilisateur active l'agent et soumet une image et/ou une question vocale. |
-| **Préconditions** | L'extension OpenBatra est active dans le side panel. Les permissions pour le microphone et la caméra ont été accordées. |
-| **Postconditions (Succès)** | Le système a fourni une réponse vocale et visuelle à la question de l'utilisateur. Le résultat de l'analyse est affiché dans l'UI. |
-| **Postconditions (Échec)** | Le système a notifié l'utilisateur de l'échec (ex: image illisible) et est retourné à un état d'attente. |
+| **Nom** | Créer une Fiche d'Identité |
+| **Acteurs** | `Utilisateur`, `Utilisateur Accessibilité` |
+| **Déclencheur** | L'utilisateur exprime l'intention de créer une nouvelle fiche d'identité. |
+| **Préconditions** | L'extension OpenBatra est active. |
+| **Postconditions (Succès)** | Un "Pack d'Identité" `.zip` a été généré et proposé à l'utilisateur pour sauvegarde. La session de création est enregistrée localement. |
+| **Postconditions (Échec)** | Le système a notifié l'utilisateur de l'échec et a sauvegardé la session de travail en l'état. |
 
-## 4. Scénario Nominal (Happy Path)
+## 4. Scénario Nominal (Création Guidée de Zéro)
 
-Cette séquence décrit le flux d'interaction idéal, comme présenté dans la vidéo de démonstration.
+Cette séquence décrit le flux de création sans analyse préalable.
 
-1.  **Utilisateur :** Active l'agent et prend une photo de l'élément à analyser.
-    - *API :* `navigator.mediaDevices.getUserMedia()`
-2.  **Système (Agent Orion) :** Annonce vocalement la bonne réception de l'image. "Photo capturée. Quelle est votre question ?"
+1.  **Utilisateur :** Active l'agent et dit "Je veux créer une nouvelle fiche d'identité".
+2.  **Système (Agent Orion) :** "Parfait. Commençons. Quel est le nom de l'élément que vous souhaitez décrire ?"
     - *API :* `SpeechSynthesis`
-3.  **Utilisateur :** Pose sa question vocalement. "Quelles sont les conditions de garantie de ce service ?"
+3.  **Utilisateur :** "Service de Conseil en Stratégie Digitale".
     - *API :* `SpeechRecognition`
-4.  **Système (Agent Orion) :** Confirme la réception et le début de l'analyse. "Analyse en cours..."
-    - *Accessibilité :* Un indicateur de chargement visuel est accompagné de ce feedback vocal pour ne pas laisser l'utilisateur dans le silence.
-5.  **Système (Agent Lens/Socrates) :**
-    a. Le texte est extrait de l'image via OCR.
-    b. Le texte et la question sont envoyés au modèle Gemma 3n.
-    c. Le modèle analyse et génère un objet JSON `AnalysisResult` structuré.
-    - *IA :* C'est ici que le prompt `analyzeProduct` est exécuté.
-6.  **Système (Agent Orion & UI) :** Le résultat est présenté à l'utilisateur de manière multimodale.
-    - *UI :* Le `humanReadableAnswer` est affiché et le `boundingBox` est utilisé pour surligner la zone pertinente sur l'image.
-    - *Voix :* Le `humanReadableAnswer` et le `contextSnippet` sont annoncés vocalement pour décrire le résultat et sa localisation.
-    - *Exemple d'annonce :* "La garantie est de 2 ans. Je surligne cette mention pour vous dans le troisième paragraphe du document."
+4.  **Système (Agent Orion) :** "Noté. Maintenant, décrivez-moi brièvement ce service en une ou deux phrases."
+5.  **Dialogue Itératif :** L'utilisateur et l'IA continuent ce dialogue. L'IA pose des questions ciblées pour remplir les champs de la fiche d'identité (public cible, livrables, prix, durée, etc.). L'utilisateur peut aussi téléverser des images (`<input type="file">`) lorsque l'IA le propose.
+6.  **Système (Agent Socrates) :** En arrière-plan, l'IA structure les réponses de l'utilisateur dans un objet JSON.
+7.  **Utilisateur :** "C'est bon pour moi, génère la fiche."
+8.  **Système (Agent Forge) :**
+    a. L'agent Forge prend l'objet JSON finalisé et les images.
+    b. Il génère un micro-site HTML/CSS simple.
+    c. Il compile le tout dans un fichier `.zip` en mémoire.
+    - *Librairie :* `JSZip`
+9.  **Système (UI) :** Le système propose à l'utilisateur de sauvegarder le fichier.
+    - *API :* `File System Access API`
+10. **Système (Agent Spore) :** Optionnellement, l'utilisateur peut demander la création d'un lien de partage.
+    - *Librairie :* `WebTorrent`
 
-## 5. Flux Alternatifs et Gestion des Erreurs
+## 5. Scénario Étendu (Création assistée par Analyse)
 
-### 5.1. Image Illisible
+Cette séquence montre comment l'utilisateur peut accélérer le processus.
 
-- **Déclencheur :** Le score de confiance de l'OCR est en dessous d'un seuil prédéfini.
+1.  **Utilisateur :** Active l'agent et dit "Je veux créer une fiche à partir de cette photo de ma poterie". Il prend une photo.
+2.  **Système (Point d'extension `<<extends>>`) :** Le système exécute une analyse générale de l'image.
+3.  **Système (Agent Lens/Socrates) :** Gemma 3n analyse l'image de la poterie. Il identifie la forme, la couleur dominante, et peut-être du texte sur une étiquette. Il pré-remplit les champs : `Type: Poterie`, `Couleur: Terre cuite`, `Matériau suspecté: Argile`.
+4.  **Système (Agent Orion) :** "Intéressant. J'ai commencé à remplir la fiche. D'après la photo, il s'agit d'une poterie en terre cuite. Est-ce correct ?"
+5.  **Utilisateur :** "Oui, c'est exact."
+6.  **Dialogue Itératif :** Le flux rejoint le scénario nominal à l'étape 5. Le dialogue se poursuit pour compléter les informations manquantes (prix, dimensions, histoire de la pièce...).
+
+## 6. Flux Alternatifs
+
+### 6.1. Interruption de la Session
+
+- **Déclencheur :** L'utilisateur ferme le navigateur ou le side panel au milieu d'une session de création.
 - **Flux :**
-    1. L'Agent Lens retourne un échec d'analyse.
-    2. L'Agent Orion annonce : "Je n'arrive pas à lire correctement le texte sur cette image. Pourriez-vous en prendre une nouvelle, plus nette et avec un meilleur éclairage ?"
-    3. Le système retourne à l'étape de capture de photo.
+    1. L'état actuel de la fiche d'identité en cours de création est automatiquement sauvegardé dans **IndexedDB** à chaque étape.
+    2. Au prochain lancement, l'Agent Orion détecte la session inachevée.
+    3. **Orion :** "Bonjour. Il semble que nous n'ayons pas terminé de créer la fiche pour 'Service de Conseil en Stratégie Digitale'. Voulez-vous reprendre là où nous nous sommes arrêtés ?"
 
-### 5.2. Erreur de Compréhension Vocale (Directive #3)
+### 6.2. Donnée Ambiguë
 
-- **Déclencheur :** La transcription de la `SpeechRecognition` a un score de confiance faible ou ne correspond à aucune intention claire.
+- **Déclencheur :** L'utilisateur donne une réponse que l'IA ne peut pas facilement structurer (ex: pour le prix, il répond "Ça dépend").
 - **Flux :**
-    1. L'Agent Orion initie un dialogue de clarification.
-    2. **Orion :** "Pardon, je ne suis pas sûr d'avoir compris. Vouliez-vous parler de la 'garantie' ? Vous pouvez dire oui, non, ou 'corriger'."
-    3. Si **"Oui"**, le flux nominal reprend avec le terme clarifié.
-    4. Si **"Non"**, Orion demande : "Pouvez-vous reformuler votre question ?"
-    5. Si **"Corriger"**, le système se remet en état d'écoute pour une nouvelle saisie de la question.
-
-### 5.3. Aucune Information Pertinente Trouvée
-
-- **Déclencheur :** Gemma 3n analyse l'image et la question mais ne trouve aucune information correspondante.
-- **Flux :**
-    1. L'Agent Socrates retourne un `AnalysisResult` avec une réponse indiquant l'échec de la recherche.
-    2. **Orion :** "J'ai bien analysé l'élément, mais je n'ai trouvé aucune information concernant '[terme recherché]'. Souhaitez-vous que je vous fasse un résumé de ce que j'ai pu identifier ?"
-    3. Le système propose des actions alternatives, comme une analyse générale.
+    1. L'Agent Socrates signale une ambiguïté.
+    2. L'Agent Orion pose une question de clarification.
+    3. **Orion :** "Je comprends. Pour la fiche, pourriez-vous me donner une fourchette de prix, par exemple 'de 50 à 150 euros' ? Ou préférez-vous indiquer 'Prix sur devis' ?"
