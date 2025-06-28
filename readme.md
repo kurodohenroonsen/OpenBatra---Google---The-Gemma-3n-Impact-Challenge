@@ -55,59 +55,26 @@ Notre force réside dans l'orchestration intelligente de Gemma 3n avec les APIs 
 
 ### Le Cœur de la Conversation : Diagramme de Séquence
 
-Voici comment nos composants interagissent pour répondre à une question sur un élément identifié :
+Voici comment nos composants interagissent pour répondre à une question sur un élément identifié. Pour plus de détails, **[consultez l'analyse complète du diagramme de séquence »](docs/SEQUENCE_DIAGRAM.md)**.
 
 <p align="center">
   <img src="assets/sequence-diagram.png" alt="generate image: a visually appealing rendering of a UML Sequence Diagram. The lifelines are: User, UI (SidePanel), VoiceOrchestrator, AppController, AI_Service. The diagram shows the flow of messages for analyzing an element. The style is 'Blue-Glow Infographic': futuristic, clean, professional, easy to read, with subtle color coding for different components. --ar 4:3">
 </p>
 
-<details>
-  <summary>Cliquez pour voir la description détaillée du flux d'interaction</summary>
-  
-  #### Description Détaillée du Flux
-  
-  1.  **[User → UI]** L'utilisateur prend une photo de l'élément à identifier (un objet, un texte, une scène...).
-  2.  **[UI → VoiceOrchestrator]** L'UI demande au `VoiceOrchestrator` de poser la question de contexte à l'utilisateur via la **Web Speech API (SpeechSynthesis)**.
-  3.  **[User → VoiceOrchestrator]** L'utilisateur pose sa question vocalement (ex: "Quelles sont les clauses de résiliation de ce contrat ?"). L'audio est transcrit en texte via **SpeechRecognition**.
-  4.  **[VoiceOrchestrator → AppController]** Le texte de la question est transmis au contrôleur principal.
-  5.  **[AppController → AI_Service]** Le contrôleur appelle le service IA avec l'image et la question.
-  6.  **[AI_Service]** Le service exécute le prompt `analyzeElement` sur **Gemma 3n**. Le modèle effectue l'OCR si nécessaire, l'analyse contextuelle de l'image et du texte, et génère un objet JSON structuré.
-  7.  **[AI_Service → AppController]** Le résultat JSON est retourné.
-  8.  **[AppController → UI & VoiceOrchestrator]** Le contrôleur dispatche le résultat. L'UI met en évidence l'information pertinente sur l'image et le `VoiceOrchestrator` annonce la réponse vocale.
-
-</details>
-
 ### L'Escouade Agentique : Rôles et Cas d'Utilisation
 
-Notre architecture est modulaire, basée sur une "escouade" d'agents spécialisés.
+Notre architecture est modulaire, basée sur une "escouade" d'agents spécialisés. Pour une exploration en profondeur des rôles et des scénarios, **[consultez l'analyse fonctionnelle complète (UML) »](docs/USE_CASES.md)**.
 
 <p align="center">
   <img src="assets/squad-architecture.png" alt="generate image: a technical architecture diagram. A central Gemma 3n AI core is at the center. Four specialized 'agents' branch out from it: 'Lens (Analysis)' with an eye icon, 'Orion (Dialogue)' with a soundwave icon, 'Forge (Creation)' with a hammer icon, and 'Spore (Sharing)' with a network icon. Each agent connects to specific Web API icons. The style is 'Blue-Glow Infographic': clean, professional. --ar 16:9">
 </p>
 
-<details>
-  <summary>Cliquez pour explorer les capacités de chaque agent et les cas d'utilisation UML</summary>
-  
-  - **Agent "Lens" (Analyse) :** Utilise Gemma 3n pour l'analyse multimodale et l'extraction de l'identité unique d'un élément.
-    
-    *Diagramme du Cas d'Utilisation "Identifier un Élément" :*
-    
-    <img src="assets/use-case-analyze.png" alt="generate image: a clear UML Use Case diagram for 'Identify an Element'. Actors 'User' and 'Accessibility User' interact with use cases like 'Take Photo', 'Ask Question Vocally', and 'Receive Vocal and Visual Feedback'. The style is 'Blue-Glow Infographic'. --ar 4:3">
-
-  - **Agent "Orion" (Dialogue) :** Gère la conversation TTS/STT via la **Web Speech API**.
-  
-  - **Agent "Forge" (Création) :** Construit le "Pack d'Identité" final (`.zip`) avec **JSZip**.
-  
-  - **Agent "Spore" (Partage) :** Crée le torrent et le magnet link à partir du pack généré, via **WebTorrent**.
-
-</details>
-
 ### Le Cerveau de l'IA : Le Prompt Maître
 
-Notre interaction principale est pilotée par un prompt multimodal qui contraint la sortie de Gemma 3n à un format JSON strict, garantissant la fiabilité.
+Notre interaction principale est pilotée par un prompt multimodal qui contraint la sortie de Gemma 3n à un format JSON strict, garantissant la fiabilité. Pour voir tous les prompts et notre stratégie de modélisation des données, **[consultez le livre de conception de l'IA »](docs/AI_DESIGN.md)**.
 
 <details>
-  <summary>Cliquez pour voir notre prompt maître</summary>
+  <summary>Cliquez pour voir un exemple de notre prompt maître</summary>
 
   ```text
   You are an expert multimodal AI assistant named "Lens". Your task is to meticulously analyze the provided image and answer the user's question to uniquely identify any object, service or concept depicted.
