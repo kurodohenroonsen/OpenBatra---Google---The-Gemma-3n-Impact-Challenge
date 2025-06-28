@@ -28,9 +28,9 @@
 
 Le monde est rempli d'informations opaques. Qu'il s'agisse de comprendre la composition d'un produit, les clauses d'un service, les caractéristiques d'une œuvre d'art ou de cataloguer une espèce de plante, l'accès à une information claire et structurée est un défi constant.
 
-<p align="center">
-  <img src="assets/vision-problem.png" alt="generate image: a triptych showing 3 diverse scenarios. Left: a tourist looking confused at a description of a local service written in a foreign language. Center: a botanist in the field, trying to identify a rare flower with no internet. Right: a small business owner overwhelmed by the complexity of a legal document. The mood is slightly frustrating but hopeful. The style is 'Blue-Glow Infographic': futuristic, clean, with blue and orange glowing accents, professional and clear. --ar 16:9">
-</p>
+| Scénario 1 : Service Complexe | Scénario 2 : Recherche Hors-Ligne | Scénario 3 : Document Dense |
+| :---: | :---: | :---: |
+| <img src="assets/vision-problem-1.png" alt="generate image: a tourist looking confused at a description of a local service written in a foreign language. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> | <img src="assets/vision-problem-2.png" alt="generate image: a botanist in a lush jungle, trying to identify a rare flower with a mobile device that shows a 'no signal' icon. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> | <img src="assets/vision-problem-3.png" alt="generate image: a person looking overwhelmed by a dense legal document or contract, highlighting the complexity of text. The style is 'Blue-Glow Infographic': futuristic, clean, professional and clear. --ar 1:1"> |
 
 **Notre Solution :** Une "escouade agentique" universelle qui vit dans votre navigateur. Prenez une photo de *n'importe quel élément identifiable*, dialoguez avec l'IA, et obtenez instantanément sa fiche d'identité numérique, structurée, multilingue et partageable.
 
