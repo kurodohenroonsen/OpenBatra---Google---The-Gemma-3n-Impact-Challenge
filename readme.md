@@ -186,7 +186,11 @@ Pour les propriétés qui se prêtent à l'extraction automatique ou qui sont de
     *   Exécute la logique métier : consultation de la DB Schema.org/GS1, appel à Gemma 3n pour le raisonnement, appel à ML Kit pour l'extraction de données brutes.
     *   Renvoie les résultats et les prochaines questions à la `WebView`.
 
-<img src="illustrations/ihm.png" alt="genere une image : Une tablette Android, son écran affiche une interface web de style estampe japonaise. Des bulles de dialogue vocales stylisées s'échappent du micro, tandis que des doigts stylisés cliquent sur des options affichées. Des kanji représentant les appels JSInterface flottent entre l'écran et des schémas de circuit imprimé en filigrane. Couleurs chaleureuses et détails fins. Format: Image unique, paysage.">
+<img src="illustrations/ihm.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image. Chaque scène utilise des couleurs vives et chaleureuses, sans aucun texte écrit dans les illustrations elles-mêmes, mais avec des symboles numériques stylisés.
+Scène 1 (gauche): Une main délicate tenant un smartphone. Des ondes sonores stylisées s'échappent du microphone du téléphone, se transformant en motifs de kanji abstraits flottant dans l'air, symbolisant l'input vocal de l'utilisateur et la question posée par l'IA.
+Scène 2 (centre): La même main dirige la caméra du smartphone vers un objet (par exemple, une bouteille de saké avec une étiquette et des motifs de code-barres). Des lignes de scan stylisées et des éclairs de données lumineuses (représentant les processus ML Kit d'OCR et de scan de code-barres) sont superposées artistiquement sur l'image capturée, indiquant l'extraction d'informations.
+Scène 3 (droite): L'écran du smartphone affiche maintenant une fiche d'identité JSON-LD pour le produit, avec des propriétés structurées (nom, description, identifiant unique) clairement agencées dans un style minimaliste. En dessous, des boutons ronds ou carrés avec des motifs simples (ex: un cercle pour 'Oui', un 'X' pour 'Non') sont affichés pour une interaction par clic. De légères flèches stylisées symbolisent le flux de données vers une forme de nuage ou de temple stylisé en arrière-plan (représentant la DB locale).
+Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
