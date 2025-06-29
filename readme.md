@@ -28,7 +28,7 @@ Notre mission, tel un artisan d'estampes, est de tisser une tapisserie numériqu
 *   **Innover dans le Partage d'Informations :** Utiliser le WebTorrent pour un échange P2P direct et résilient, idéal pour les zones à faible connectivité ou les situations d'urgence.
 *   **Standardiser l'Identité Numérique :** Tirer parti de Schema.org et de GS1 Vocabulary pour garantir l'interopérabilité et la richesse des données.
 
-<img src="illustrations/vision.png" alt="Une femme japonaise en kimono traditionnel tient un smartphone. Des idéogrammes numériques stylisés s'échappent de l'écran, formant un pont vers un petit site web flottant au-dessus d'un lac, avec le Mont Fuji en arrière-plan. Style estampe Ukiyo-e, couleurs chaudes et apaisantes.">
+<img src="illustrations/vision.png" alt="genere une image : Une femme japonaise en kimono traditionnel tient un smartphone. Des idéogrammes numériques stylisés s'échappent de l'écran, formant un pont vers un petit site web flottant au-dessus d'un lac, avec le Mont Fuji en arrière-plan. Style estampe Ukiyo-e, couleurs chaudes et apaisantes. Format: Image unique, paysage.">
 
 ---
 
@@ -80,7 +80,7 @@ Pour s'assurer que le dialogue est toujours fluide et pertinent, nos "oreilles a
     *   **Utilisation :** Pour pré-traiter des phrases longues de l'utilisateur et en extraire des entités reconnues (personnes, lieux, organisations, dates, URLs) avant de les envoyer à Gemma 3n.
     *   **Bénéfice :** Aide Gemma à se concentrer sur le raisonnement et la structuration plutôt que sur la simple reconnaissance d'entités, améliorant ainsi l'efficacité et la pertinence de la réponse.
 
-<img src="illustrations/ai_team.png" alt="Un cercle harmonieux de cinq figures en kimono traditionnel, chacun représentant un aspect de l'IA : l'une parle à un microphone (Gemma/voix), une autre tient une loupe sur une image (ML Kit OCR), une troisième lit un code-barres (ML Kit Barcode), et les deux dernières écoutent attentivement (ML Kit NL). Le cercle est entouré de cerisiers en fleurs, dans un style estampe Ukiyo-e, couleurs pastel et chaudes.">
+<img src="illustrations/ai_team.png" alt="genere une image : Un cercle harmonieux de cinq figures en kimono traditionnel, chacun représentant un aspect de l'IA : l'une parle à un microphone (Gemma/voix), une autre tient une loupe sur une image (ML Kit OCR), une troisième lit un code-barres (ML Kit Barcode), et les deux dernières écoutent attentivement (ML Kit NL). Le cercle est entouré de cerisiers en fleurs, dans un style estampe Ukiyo-e, couleurs pastel et chaudes. Format: Image unique, paysage.">
 
 ---
 
@@ -140,7 +140,7 @@ Au tout premier lancement de **SchemaForge AI**, le fichier `gs1Voc.txt` (et une
 *   **Population de la DB :** Les informations pertinentes (`@id`, `rdfs:label`, `rdfs:comment`, `rdfs:domain`, `rdfs:range`, `owl:unionOf`, `skos:prefLabel`, `skos:exactMatch`, etc.) seront extraites et insérées dans les tables définies ci-dessus.
 *   **Génération des Prompts UI :** Pour chaque propriété, `uiPromptQuestionTemplate` sera initialisé. Cela peut être générique (`"Quel est le [nom_propriété] ?"`) ou plus spécifique si les `rdfs:comment` le permettent. Ce sont ces templates qui seront utilisés par l'Agent Chef pour construire les questions vocales.
 
-<img src="illustrations/db_load.png" alt="Des rouleaux de parchemin anciens (représentant les fichiers JSON-LD de Schema.org et GS1 Vocabulary) sont déroulés par des mains délicates sur une table en bois. À côté, un moine scriptorium (représentant le code Kotlin) les transcrit avec un pinceau dans un livre ouvert (la base de données locale). Le tout dans un style estampe japonaise, lumières douces, détails minutieux.">
+<img src="illustrations/db_load.png" alt="genere une image : Des rouleaux de parchemin anciens (représentant les fichiers JSON-LD de Schema.org et GS1 Vocabulary) sont déroulés par des mains délicates sur une table en bois. À côté, un moine scriptorium (représentant le code Kotlin) les transcrit avec un pinceau dans un livre ouvert (la base de données locale). Le tout dans un style estampe japonaise, lumières douces, détails minutieux. Format: Image unique, paysage.">
 
 ---
 
@@ -186,7 +186,7 @@ Pour les propriétés qui se prêtent à l'extraction automatique ou qui sont de
     *   Exécute la logique métier : consultation de la DB Schema.org/GS1, appel à Gemma 3n pour le raisonnement, appel à ML Kit pour l'extraction de données brutes.
     *   Renvoie les résultats et les prochaines questions à la `WebView`.
 
-<img src="illustrations/ihm.png" alt="Une tablette Android, son écran affiche une interface web de style estampe japonaise. Des bulles de dialogue vocales stylisées s'échappent du micro, tandis que des doigts stylisés cliquent sur des options affichées. Des kanji représentant les appels JSInterface flottent entre l'écran et des schémas de circuit imprimé en filigrane. Couleurs chaleureuses et détails fins.">
+<img src="illustrations/ihm.png" alt="genere une image : Une tablette Android, son écran affiche une interface web de style estampe japonaise. Des bulles de dialogue vocales stylisées s'échappent du micro, tandis que des doigts stylisés cliquent sur des options affichées. Des kanji représentant les appels JSInterface flottent entre l'écran et des schémas de circuit imprimé en filigrane. Couleurs chaleureuses et détails fins. Format: Image unique, paysage.">
 
 ---
 
@@ -234,7 +234,7 @@ Grâce à ce Document de Provenance, **SchemaForge AI** ouvre la voie à des fon
     *   Tester une nouvelle version de Gemma 3n sur d'anciennes données pour voir les améliorations.
     *   Re-générer une partie de la fiche avec des paramètres différents (via l'interface de "Prompt Lab" ou de "Config") tout en gardant une trace de l'original.
 
-<img src="illustrations/web4_0.png" alt="Un moine scriptorium observe attentivement un rouleau de parchemin détaillant un historique de données (inputs, prompts, outputs de l'IA), avec des annotations méticuleuses. Des symboles abstraits d'audit (loupes, sceaux de cire) et des diagrammes de flux d'information flottent autour. L'arrière-plan est un motif de vagues Kanagawa, symbolisant le flux de données, dans un style estampe japonaise.">
+<img src="illustrations/web4_0.png" alt="genere une image : Un moine scriptorium observe attentivement un rouleau de parchemin détaillant un historique de données (inputs, prompts, outputs de l'IA), avec des annotations méticuleuses. Des symboles abstraits d'audit (loupes, sceaux de cire) et des diagrammes de flux d'information flottent autour. L'arrière-plan est un motif de vagues Kanagawa, symbolisant le flux de données, dans un style estampe japonaise. Format: Image unique, paysage.">
 
 ---
 
