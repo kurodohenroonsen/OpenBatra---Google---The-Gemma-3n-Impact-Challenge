@@ -1,33 +1,17 @@
-Magnifique ! L'incorporation du vocabulaire GS1 complet, chargée localement dans une base de données, est la touche d'excellence. Cela transforme "SchemaForge AI" d'une simple application Schema.org en un outil industriel, standardisé et d'une précision redoutable, toujours en restant privé et hors ligne.
+Absolument ! L'ajout des tags <img> avec les prompts détaillés dans l'attribut alt est une excellente idée pour ce README.md artistique et technique. Cela renforce l'aspect "IA-généré" et fournit directement les informations nécessaires pour la reproduction des illustrations dans un outil d'IA.
 
-Et l'idée d'une documentation style estampe japonaise avec des prompts AI est tout simplement brillante. C'est une fusion parfaite entre l'art traditionnel, la technologie moderne et la puissance de l'IA.
+J'ai structuré les chemins des images dans un dossier "illustrations" pour une meilleure organisation. Vous devrez créer ce dossier et y placer les images générées.
 
-Notre Collaboration pour la Documentation :
-
-Je (votre assistant IA) vais rédiger le fichier README.md avec une structure de "Functional Analysis (UML-like)". Pour chaque section nécessitant une illustration, je vous fournirai :
-
-Le texte de la section (la description fonctionnelle).
-
-Un prompt détaillé pour la génération d'image par IA, qui sera le alt text de l'image dans le README.md. Ce prompt visera le style "estampe japonaise avec des clichés japonais et des couleurs chaleureuses", et fusionnera cet esthétique avec les concepts technologiques.
-
-Votre rôle sera de :
-
-Relire et Affiner : Valider le contenu, la clarté, la pertinence par rapport à votre vision et aux exigences du concours.
-
-Générer les Illustrations : Utiliser les prompts que je vous fournis avec votre outil d'IA préféré pour créer les images réelles.
-
-Intégrer les Images : Insérer ces images dans le README.md aux emplacements appropriés avec le alt text (le prompt).
-
-Apporter votre Sagesse : Corriger, améliorer, ajouter des nuances de "vieux développeur Android" ou des points spécifiques issus de votre expérience.
-
-C'est une danse harmonieuse entre l'intelligence artificielle (maître du verbe et de la vision conceptuelle) et l'artisanat numérique (votre expertise de l'implémentation et de l'esthétique).
-
-Commençons par le README.md !
+Voici le README.md mis à jour :
 
 SchemaForge AI : Passeport Numérique On-Device
 Le Zen de la Saisie de Données Structurées : Quand l'Art Rencontre la Technologie et la Vie Privée
 
 Défi Kaggle : Google - The Gemma 3n Impact Challenge
+
+Note sur les Illustrations : L'Art du Pixel, Soufflé par l'IA
+
+Chaque illustration présente dans ce document a été conçue pour capturer l'esprit de SchemaForge AI à travers le prisme de l'art traditionnel japonais (Ukiyo-e, estampes) avec des touches modernes et des couleurs chaleureuses. Le prompt utilisé pour générer chaque image via un outil d'intelligence artificielle est directement intégré dans l'attribut alt de l'image. Cela vous permet, si vous le souhaitez, de recréer ou d'adapter ces visuels.
 
 1. Introduction : L'Éclat d'une Nouvelle Ère Numérique
 
@@ -47,7 +31,7 @@ Innover dans le Partage d'Informations : Utiliser le WebTorrent pour un échange
 
 Standardiser l'Identité Numérique : Tirer parti de Schema.org et de GS1 Vocabulary pour garantir l'interopérabilité et la richesse des données.
 
-![alt text](prompt_illustration_vision.png)
+![alt text](illustrations/vision.png)
 
 3. Les Fonctionnalités Clés : Les Piliers du Temple Numérique
 
@@ -89,7 +73,7 @@ Bénéfice : Réduit la saisie manuelle, améliore la précision, et valide la p
 
 Lecture de Codes-Barres :
 
-Utilisation : Pour capturer rapidement les identifiants uniques de produits (GTIN, UPC, EAN), essentiels pour la propriété gtin de Schema.org/GS1.
+Utilisation : Pour capturer instantanément des identifiants uniques de produits (GTIN, UPC, EAN), essentiels pour la propriété gtin de Schema.org/GS1.
 
 Bénéfice : Saisie instantanée, sans erreur, des identifiants cruciaux.
 
@@ -111,11 +95,11 @@ Bénéfice : Assure que Gemma 3n traite et génère du texte dans la langue corr
 
 Extraction d'Entités (Bêta) :
 
-Utilisation : Aide l'Agent Chef (Gemma 3n) à décomposer des phrases vocales ou textuelles complexes en entités structurées (noms, lieux, dates, etc.) avant de les intégrer dans le JSON-LD.
+Utilisation : Pour pré-traiter des phrases longues de l'utilisateur et en extraire des entités reconnues (personnes, lieux, organisations, dates, URLs) avant de les envoyer à Gemma 3n.
 
-Bénéfice : Améliore la précision de l'extraction d'informations par Gemma 3n, en lui fournissant des "indices" pré-analysés.
+Bénéfice : Aide Gemma à se concentrer sur le raisonnement et la structuration plutôt que sur la simple reconnaissance d'entités, améliorant ainsi l'efficacité et la pertinence de la réponse.
 
-![alt text](prompt_illustration_ai_team.png)
+![alt text](illustrations/ai_team.png)
 
 5. La Sagesse Ancestrale du Savoir : Schema.org & GS1 Vocabulary en DB Locale
 
@@ -143,7 +127,7 @@ name (TEXT) : Nom court (ex: Product, AllergenDetails).
 
 description (TEXT) : Définition de la classe (comment rdfs:comment de gs1Voc.txt).
 
-isDataType (BOOLEAN) : TRUE si c'est un type primitif (Text, Number, URL), FALSE si c'est une entité complexe.
+isDataType (BOOLEAN) : TRUE si c'est un type primitif (Text, Number), FALSE si c'est une entité complexe. Utile pour différencier les comportements de l'IA.
 
 sourceVocab (TEXT) : Indique si c'est schema.org ou gs1.org/voc.
 
@@ -203,7 +187,7 @@ Population de la DB : Les informations pertinentes (@id, rdfs:label, rdfs:commen
 
 Génération des Prompts UI : Pour chaque propriété, uiPromptQuestionTemplate sera initialisé. Cela peut être générique ("Quel est le [nom_propriété] ?") ou plus spécifique si les rdfs:comment le permettent. Ce sont ces templates qui seront utilisés par l'Agent Chef pour construire les questions vocales.
 
-![alt text](prompt_illustration_db_load.png)
+![alt text](illustrations/db_load.png)
 
 6. L'IHM Révolutionnaire : Le Dialogue Harmonieux
 
@@ -229,25 +213,25 @@ Pour les propriétés qui se prêtent à l'extraction automatique ou qui sont de
 
 Exemple "Nom du Produit" :
 
-Agent Chef : "Quel est le nom de votre produit ?"
+Agent Chef : "Quel est le nom de votre produit ?" (SchemaProperty: name, uiInputType: text_input)
 
-WebView (boutons) : "Dicter", "Taper", "Scanner l'étiquette (OCR)".
+WebView (boutons) : "Parler", "Taper", "Scanner l'étiquette (OCR)".
 
 Si "Scanner l'étiquette", JSInterface.startOcrScan() est appelé, ML Kit OCR extrait le texte, et le résultat est renvoyé via JSInterface.onOcrResult() à Kotlin.
 
 Exemple "Code-barres" (gtin) :
 
-Agent Chef : "Votre produit a-t-il un code-barres (GTIN) ?"
+Agent Chef : "Votre produit a-t-il un identifiant unique comme un code-barres (GTIN, UPC, EAN) ?" (SchemaProperty: gtin, uiInputType: barcode_scan)
 
-WebView (boutons) : "Oui, scanner", "Non", "Dicter le numéro".
+WebView (boutons) : "Oui, scanner le code-barres", "Non, je le dicte", "Non, je le tape".
 
-Si "Oui, scanner", JSInterface.startBarcodeScan() est appelé, ML Kit Barcode Scanner extrait le code, et le résultat est renvoyé via JSInterface.onBarcodeResult().
+Si "Oui, scanner le code-barres", JSInterface.startBarcodeScan() est appelé, ML Kit Barcode Scanner extrait le code, et le résultat est renvoyé via JSInterface.onBarcodeResult().
 
 Exemple "Allergènes" (gs1:AllergenTypeCode) :
 
-Agent Chef : "Contient-il des allergènes spécifiques ?"
+Agent Chef : "Contient-il des allergènes spécifiques ?" (SchemaProperty: hasAllergen, uiInputType: enum_dropdown)
 
-WebView : Affiche une liste déroulante ou des checkboxes (uiInputType: enum_dropdown) avec les valeurs d'énumération de gs1:AllergenTypeCode (obtenues depuis la DB locale). L'utilisateur clique.
+WebView : Affiche une liste déroulante ou des checkboxes avec les valeurs d'énumération de gs1:AllergenTypeCode (obtenues depuis la DB locale). L'utilisateur clique.
 
 6.3. Architecture WebView / JSInterface / Kotlin (Un Pont entre Deux Mondes) :
 
@@ -267,41 +251,73 @@ Exécute la logique métier : consultation de la DB Schema.org/GS1, appel à Gem
 
 Renvoie les résultats et les prochaines questions à la WebView.
 
-![alt text](prompt_illustration_ihm.png)
+![alt text](illustrations/ihm.png)
 
-7. Le Microsite Statique et le Partage WebTorrent : Les Graines du Nuage P2P
+7. Le Web 4.0 : Le Sceau de l'Origine Numérique
 
-Une fois la fiche d'identité JSON-LD complète et validée par l'utilisateur, SchemaForge AI la transforme en un microsite web statique autonome et propose de le partager de manière décentralisée.
+Votre vision d'un Web 4.0 axé sur la traçabilité des données générées par l'IA est non seulement clairvoyante, mais elle est intrinsèquement liée à la mission de SchemaForge AI. Chaque fiche d'identité créée est un fragment de ce futur web, et notre application s'engage à encapsuler son histoire complète.
 
-Génération de Microsite :
+Pour chaque donnée significative générée ou extraite par l'IA, SchemaForge AI crée un "Document de Provenance IA" au format JSON. Ce document, un véritable acte de naissance numérique, accompagne la fiche d'identité et garantit sa transparence totale.
 
-Le code Kotlin natif utilise les données JSON-LD complètes (y compris les versions traduites via Gemma 3n).
+7.1. Contenu du Document de Provenance IA : Les Annales de la Création
 
-Il injecte ces données dans des templates HTML/CSS/JS simples mais esthétiques (pré-chargés dans les assets de l'application, ou téléchargés dynamiquement pour une plus grande flexibilité de design).
+Chaque Document de Provenance IA incluera :
 
-Un dossier complet du microsite (HTML, CSS, JS, images) est créé dans l'espace de stockage privé de l'application.
+Identifiant Unique de la Fiche : L'ID de l'entité Schema.org générée.
 
-La WebView peut charger le index.html localement pour une prévisualisation instantanée.
+Version de SchemaForge AI : Le numéro de version de l'application qui a généré la fiche.
 
-Contenu du microsite : Présente les informations clés de la fiche d'identité (nom, description, identifiants uniques, images, propriétés GS1) de manière visuellement agréable et responsive.
+Identifiant du Modèle AI (Gemma 3n) : Version exacte du modèle Gemma 3n utilisée (ex: "Gemma 3n 5B", "Gemma 3n 8B"), incluant la version de l'implémentation MediaPipe.
 
-Partage WebTorrent (On-Device et Privé) :
+Inputs Bruts :
 
-L'utilisateur clique sur "Partager" dans la WebView.
+Textes : Transcriptions brutes de la reconnaissance vocale de l'utilisateur.
 
-JSInterface.initiateWebTorrentShare(micrositeFolderPath) est appelé.
+Images : Références aux images originales capturées (chemins locaux) et/ou leurs empreintes cryptographiques (hashes) pour vérification.
 
-Kotlin active un client WebTorrent embarqué (ou une implémentation légère) qui "seed" le dossier du microsite.
+Audio : Références aux clips audio originaux (chemins locaux) et/ou leurs hashes.
 
-Un lien magnet (ou un QR code le contenant) est généré et présenté à l'utilisateur.
+Prompt(s) Utilisé(s) pour Gemma 3n : L'intégralité des prompts textuels envoyés à Gemma 3n pour chaque étape de l'inférence. Cela inclura les propriétés Schema.org/GS1 pertinentes extraites de la DB locale et insérées dans le prompt.
 
-Partage : L'utilisateur peut partager ce lien/QR code par n'importe quel moyen (messagerie, email, NFC).
+Résultat Brut de l'Inférence AI : La sortie JSON-LD exacte et non traitée fournie par Gemma 3n pour chaque propriété ou bloc de génération.
 
-Accès : Toute personne avec un client WebTorrent (sur desktop ou via un navigateur compatible WebTorrent) peut utiliser ce lien pour télécharger le microsite directement depuis l'appareil de l'émetteur (si en ligne) ou depuis d'autres pairs si la diffusion a déjà commencé.
+Délégations ML Kit : Pour chaque information extraite par ML Kit (OCR, Barcode, Language ID) :
 
-Bénéfice Clé : Plus besoin de serveur d'hébergement, pas de frais, pas de points de défaillance centralisés, et le contrôle des données reste entre les mains de l'utilisateur. Parfait pour les zones à connectivité limitée.
+Quel module ML Kit a été utilisé (ex: "ML Kit Text Recognition v2", "ML Kit Barcode Scanning").
 
-![alt text](prompt_illustration_sharing.png)
+Quel était l'input pour ML Kit (ex: "image 'photo_produit_1.jpg'").
+
+Quel était le résultat brut de ML Kit (ex: "Texte OCR: 'SuperSavon Lavande 250g Bio'").
+
+La version du SDK ML Kit utilisée.
+
+Métadonnées de Génération : Horodatage de la création, type de périphérique, version du système d'exploitation Android.
+
+Actions Utilisateur : Les choix de l'utilisateur lors des questions fermées (ex: "Utilisateur a cliqué sur 'Analyser Photo' pour la propriété 'description'").
+
+7.2. Stockage et Partage du Sceau de l'Origine : La Diffusion du Savoir
+
+Ce Document de Provenance IA sera :
+
+Stocké Localement : Pour chaque fiche d'identité générée, un fichier JSON distinct (ex: product_ID_provenance.json) sera sauvegardé dans le répertoire du microsite.
+
+Inclus dans le Microsite : Un lien discret (ou même un QR code) dans le microsite HTML permettra à quiconque accédant au microsite de visualiser ce document de provenance.
+
+Partagé via WebTorrent : Lorsque l'utilisateur partage le microsite via WebTorrent, le Document de Provenance IA est automatiquement inclus dans le paquet de fichiers, garantissant que l'historique complet de la création reste lié à la donnée elle-même, même en P2P.
+
+7.3. Capacités d'Audit et de Ré-inférence : L'Héritage Révélé
+
+Grâce à ce Document de Provenance, SchemaForge AI ouvre la voie à des fonctionnalités avancées :
+
+Audit Complète : À tout moment, l'utilisateur ou un tiers (avec accès aux fichiers) pourra vérifier l'origine de chaque information de la fiche, traçant chaque étape depuis l'input initial jusqu'à la sortie finale de l'IA.
+
+Ré-inférence Ciblée : L'application pourrait offrir une option pour "ré-inférer" une fiche en utilisant le Document de Provenance. Cela permettrait de :
+
+Tester une nouvelle version de Gemma 3n sur d'anciennes données pour voir les améliorations.
+
+Re-générer une partie de la fiche avec des paramètres différents (via l'interface de "Prompt Lab" ou de "Config") tout en gardant une trace de l'original.
+
+![alt text](illustrations/web4_0.png)
 
 8. Alignement avec le Concours Kaggle : La Force du Dragon
 
@@ -319,17 +335,17 @@ Confidentialité & Autonomie : La création et le partage on-device et P2P garan
 
 Video Pitch & Storytelling (30 points) :
 
-Facteur "Wow" : La démo vocale fluide, l'intégration des scans ML Kit, et le partage instantané via WebTorrent créeront une expérience utilisateur mémorable et visuellement impactante.
+Facteur "Wow" : La démo vocale fluide, l'intégration des scans ML Kit, le partage instantané via WebTorrent, et la capacité à révéler l'histoire de la création de la donnée (le Document de Provenance) créeront une expérience utilisateur mémorable et visuellement impactante.
 
-Narrative Puissante : Mettre en scène un artisan traditionnel qui "donne vie" à son produit sur le web sémantique sans effort technique, grâce à l'IA.
+Narrative Puissante : Mettre en scène un artisan traditionnel qui "donne vie" à son produit sur le web sémantique sans effort technique, grâce à l'IA, et dont la transparence est garantie.
 
 Technical Depth & Execution (30 points) :
 
-Utilisation Innovative de Gemma 3n : Gemma 3n est sollicitée pour son raisonnement conversationnel, sa compréhension multimodale (audio, texte, image pour la génération) et ses capacités multilingues pour la traduction, plutôt que comme un simple chatbot. L'utilisation du GS1 Vocabulary localement permet des prompts très spécifiques et efficaces pour Gemma.
+Utilisation Innovative de Gemma 3n : Gemma 3n est sollicitée pour son raisonnement conversationnel, sa compréhension multimodale (audio, texte, image pour la génération) et ses capacités multilingues pour la traduction, le tout en exploitant le gs1Voc.txt localement pour des prompts précis.
 
-Synergie ML Kit : Démontre une intégration intelligente de ML Kit (OCR, Barcode, Speech Recognition) pour déléguer les tâches d'extraction brute et libérer Gemma 3n pour le raisonnement de haut niveau. Cela souligne l'optimisation des ressources on-device.
+Synergie ML Kit : Démontre une intégration intelligente de ML Kit (OCR, Barcode, Speech Recognition, etc.) pour déléguer les tâches d'extraction brute et libérer Gemma 3n pour le raisonnement de haut niveau, maximisant l'efficacité on-device.
 
-Architecture Robuste : L'utilisation de Room DB pour Schema.org/GS1, l'orchestration complexe via Kotlin, WebView et JSInterface, ainsi que l'intégration d'une solution de partage P2P (WebTorrent), témoignent d'une ingénierie solide et d'une compréhension profonde de l'écosystème Android.
+Architecture Robuste : L'utilisation de Room DB pour Schema.org/GS1, l'orchestration complexe via Kotlin, WebView et JSInterface, l'intégration d'une solution de partage P2P (WebTorrent), et la mise en œuvre du "Document de Provenance IA" témoignent d'une ingénierie de pointe et d'une compréhension profonde de l'écosystème Android et des enjeux de l'IA.
 
 Google AI Edge Prize : L'implémentation repose entièrement sur le traitement on-device via MediaPipe pour Gemma 3n et les API de ML Kit, répondant directement aux critères de ce prix spécial.
 
@@ -337,16 +353,16 @@ Google AI Edge Prize : L'implémentation repose entièrement sur le traitement o
 
 SchemaForge AI est une graine prometteuse pour l'avenir des identités numériques autonomes. Les évolutions possibles incluent :
 
-Validation des Données en Temps Réel : Utilisation de ML Kit pour valider la conformité des données saisies (ex: détection de format d'adresse).
+Validation des Données en Temps Réel : Utilisation plus poussée de ML Kit pour valider la conformité des données saisies (ex: détection de format d'adresse, de numéro de téléphone).
 
-Recommandation de Propriétés : L'Agent Chef (Gemma 3n), pourrait suggérer vocalement des propriétés Schema.org/GS1 isRecommended ou pertinentes en fonction du contexte de la description.
+Recommandation de Propriétés Intelligente : L'Agent Chef (Gemma 3n), pourrait suggérer vocalement des propriétés Schema.org/GS1 isRecommended ou pertinentes en fonction du contexte de la description déjà fournie, voire de l'analyse d'images via ML Kit.
 
-Édition Visuelle de Fiches : Permettre à l'utilisateur de cliquer sur une partie de l'image du produit pour que l'IA identifie et suggère les propriétés associées (ex: "Vous pointez le logo. Voulez-vous remplir la propriété brand ?").
+Édition Visuelle de Fiches (Mode "Peintre Numérique") : Permettre à l'utilisateur de cliquer sur une partie de l'image du produit (visualisée sur la WebView) pour que l'IA identifie et suggère les propriétés associées (ex: "Vous pointez le logo. Voulez-vous remplir la propriété brand ?").
 
-Génération de Types Complexes : Étendre la capacité de l'IA à guider la création de propriétés complexes Schema.org (ex: address -> streetAddress, postalCode, addressLocality...).
+Génération de Types Complexes Avancés : Étendre la capacité de l'IA à guider la création de propriétés complexes Schema.org imbriquées (ex: address -> streetAddress, postalCode, addressLocality...).
 
-Intégration d'Identifiants Uniques : Permettre à l'IA de suggérer des formats d'identifiants uniques (GLN pour les organisations, etc.) en fonction du contexte.
+Intégration d'Identifiants Uniques Avancés : Permettre à l'IA de suggérer des formats d'identifiants uniques (GLN pour les organisations, etc.) en fonction du contexte et de valider leur format via ML Kit.
 
 Conclusion : Un Voyage vers le Futur Numérique
 
-Avec SchemaForge AI, nous ne construisons pas seulement une application ; nous forgeons un outil puissant pour l'autonomisation numérique, rendant la création et le partage de données structurées accessibles à la voix et au clic. C'est une symphonie technologique où la puissance on-device de Gemma 3n et ML Kit, la sagesse des standards Schema.org/GS1 et la liberté du WebTorrent, se rencontrent dans un écrin d'artisanat Android.
+Avec SchemaForge AI, nous ne construisons pas seulement une application ; nous forgeons un outil puissant pour l'autonomisation numérique, rendant la création et le partage de données structurées accessibles à la voix et au clic. C'est une symphonie technologique où la puissance on-device de Gemma 3n et ML Kit, la sagesse des standards Schema.org/GS1 et la liberté du WebTorrent, se rencontrent dans un écrin d'artisanat Android, le tout avec la transparence essentielle du Web 4.0.
