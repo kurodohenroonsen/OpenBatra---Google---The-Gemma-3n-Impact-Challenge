@@ -8,13 +8,22 @@
 
 ### **Note sur les Illustrations : L'Art du Pixel, Soufflé par l'IA**
 
-Chaque illustration présente dans ce document a été conçue pour capturer l'esprit de **SchemaForge AI** à travers le prisme de l'art traditionnel japonais (Ukiyo-e, estampes) avec des touches modernes et des couleurs chaleureuses. Le prompt utilisé pour générer chaque image via un outil d'intelligence artificielle est directement intégré dans l'attribut `alt` de l'image. Cela vous permet, si vous le souhaitez, de recréer ou d'adapter ces visuels.
+Chaque illustration présente dans ce document a été conçue pour capturer l'esprit de **SchemaForge AI** à travers le prisme de l'art traditionnel japonais (Ukiyo-e, estampes) avec des touches modernes et des couleurs chaleureuses. Le prompt utilisé pour générer chaque image via un outil d'intelligence artificielle est directement intégré dans l'attribut `alt` de l'image. Cela vous permet, si vous le souhaitez, de recréer ou d'adapter ces visuels. Aucune illustration ne contient de texte interne, toutes les informations textuelles sont dans le `alt` et la description du `README.md`.
+
+---
+
+<img src="illustrations/banner.png" alt="genere une image : Une longue bannière horizontale au style estampe japonaise. Au centre, un moine scriptorium avec un smartphone, entouré de symboles numériques stylisés comme des vagues ou des fleurs de cerisier. Des éléments de circuits imprimés ou de réseaux apparaissent discrètement en arrière-plan, mais le style reste organique et artistique. Couleurs chaudes, rouge, or, marron. Format: Image unique, très large et courte (ratio 8:1 ou 10:1).">
 
 ---
 
 ### **1. Introduction : L'Éclat d'une Nouvelle Ère Numérique**
 
 Dans un monde où l'information est reine, la standardisation et l'accessibilité des données sont des trésors inestimables. Cependant, la création de fiches d'identité numériques structurées (comme le JSON-LD Schema.org) reste un art arcanique, réservé aux initiés. **SchemaForge AI** brise ces barrières. Imaginez un compagnon IA, discret et toujours à portée de main, qui vous guide, par la voix et le regard, dans la création de passeports numériques pour tout objet, service ou organisation. Ces identités, d'une précision chirurgicale grâce à la puissance de Schema.org et de l'extension GS1 Vocabulary, se transforment en microsites web autonomes, partageables en un souffle, même loin des sentiers battus du réseau.
+
+<img src="illustrations/intro_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Des parchemins anciens et complexes avec des diagrammes alambiqués flottent autour d'une silhouette humaine confuse, symbolisant la difficulté de la structuration des données.
+Scène 2 (centre): Une main tend un smartphone vers un petit microphone. Des ondes sonores stylisées s'échappent du microphone vers des symboles numériques clairs, représentant l'input vocal simple de l'utilisateur.
+Scène 3 (droite): Un passeport numérique stylisé, clair et bien organisé, s'élève du smartphone, des éléments de code JSON-LD s'intégrant harmonieusement. Le tout dans le style estampe Ukiyo-e, couleurs chaudes. Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -28,7 +37,10 @@ Notre mission, tel un artisan d'estampes, est de tisser une tapisserie numériqu
 *   **Innover dans le Partage d'Informations :** Utiliser le WebTorrent pour un échange P2P direct et résilient, idéal pour les zones à faible connectivité ou les situations d'urgence.
 *   **Standardiser l'Identité Numérique :** Tirer parti de Schema.org et de GS1 Vocabulary pour garantir l'interopérabilité et la richesse des données.
 
-<img src="illustrations/vision.png" alt="genere une image : Une femme japonaise en kimono traditionnel tient un smartphone. Des idéogrammes numériques stylisés s'échappent de l'écran, formant un pont vers un petit site web flottant au-dessus d'un lac, avec le Mont Fuji en arrière-plan. Style estampe Ukiyo-e, couleurs chaudes et apaisantes. Format: Image unique, paysage.">
+<img src="illustrations/vision_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Des chaînes numériques stylisées se brisent autour d'un temple flottant, symbolisant la rupture des barrières de l'information et l'accès démocratisé.
+Scène 2 (centre): Des figures abstraites de personnes diverses (personnes âgées, enfants, personnes à mobilité réduite) utilisent des smartphones avec des ondes sonores et des symboles visuels, représentant l'accessibilité et l'inclusion.
+Scène 3 (droite): Des petits kimonos numériques flottent au-dessus d'un réseau mondial de lanternes connectées (représentant le partage P2P et la standardisation), sous un ciel étoilé. Le tout dans le style estampe Ukiyo-e, couleurs chaudes. Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -39,6 +51,11 @@ Notre mission, tel un artisan d'estampes, est de tisser une tapisserie numériqu
 *   **Base de Données Locale Schema.org & GS1 Vocabulary :** Connaissance approfondie et hors ligne de l'ontologie pour un guidage précis et une validation robuste.
 *   **Génération de Microsites Statiques Multilingues :** Transformation de la fiche d'identité en une mini-page web autonome, traduite à la volée.
 *   **Partage Décentralisé via WebTorrent :** Distribution facile et privée des microsites, même sans connexion internet stable.
+
+<img src="illustrations/features_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Une main tenant un microphone d'où s'échappent des symboles de dialogue, pointant vers une fiche d'identité numérique en construction, illustrant le guidage vocal.
+Scène 2 (centre): Des yeux stylisés observant un code-barres et un texte sur un objet réel, avec des éclairs de données se dirigeant vers un smartphone, représentant l'extraction ML Kit.
+Scène 3 (droite): Un petit site web statique s'élevant d'un smartphone, entouré de symboles de partage P2P (tourbillons et flèches décentralisées), dans un paysage japonais avec un soleil levant. Le tout dans le style estampe Ukiyo-e, couleurs vives. Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -80,7 +97,11 @@ Pour s'assurer que le dialogue est toujours fluide et pertinent, nos "oreilles a
     *   **Utilisation :** Pour pré-traiter des phrases longues de l'utilisateur et en extraire des entités reconnues (personnes, lieux, organisations, dates, URLs) avant de les envoyer à Gemma 3n.
     *   **Bénéfice :** Aide Gemma à se concentrer sur le raisonnement et la structuration plutôt que sur la simple reconnaissance d'entités, améliorant ainsi l'efficacité et la pertinence de la réponse.
 
-<img src="illustrations/ai_team.png" alt="genere une image : Un cercle harmonieux de cinq figures en kimono traditionnel, chacun représentant un aspect de l'IA : l'une parle à un microphone (Gemma/voix), une autre tient une loupe sur une image (ML Kit OCR), une troisième lit un code-barres (ML Kit Barcode), et les deux dernières écoutent attentivement (ML Kit NL). Le cercle est entouré de cerisiers en fleurs, dans un style estampe Ukiyo-e, couleurs pastel et chaudes. Format: Image unique, paysage.">
+<img src="illustrations/ai_team.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Un moine zen (Gemma 3n) médite calmement, des volutes de fumée stylisées s'échappant de sa bouche vers une pile de livres anciens, symbolisant le raisonnement et la connaissance du schéma.org.
+Scène 2 (centre): Un oiseau de proie stylisé (œil de lynx de ML Kit Vision) avec un iris en forme de lentille de caméra survole des objets (un code-barres, une étiquette de produit). Des rayons lasers stylisés s'échappent de son œil pour extraire des informations numériques claires.
+Scène 3 (droite): Des oreilles stylisées de kitsune (esprit renard japonais) écoutent attentivement des ondes sonores abstraites. Ces ondes se transforment en symboles clairs et organisés, représentant la compréhension du langage naturel par ML Kit.
+Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -140,7 +161,11 @@ Au tout premier lancement de **SchemaForge AI**, le fichier `gs1Voc.txt` (et une
 *   **Population de la DB :** Les informations pertinentes (`@id`, `rdfs:label`, `rdfs:comment`, `rdfs:domain`, `rdfs:range`, `owl:unionOf`, `skos:prefLabel`, `skos:exactMatch`, etc.) seront extraites et insérées dans les tables définies ci-dessus.
 *   **Génération des Prompts UI :** Pour chaque propriété, `uiPromptQuestionTemplate` sera initialisé. Cela peut être générique (`"Quel est le [nom_propriété] ?"`) ou plus spécifique si les `rdfs:comment` le permettent. Ce sont ces templates qui seront utilisés par l'Agent Chef pour construire les questions vocales.
 
-<img src="illustrations/db_load.png" alt="genere une image : Des rouleaux de parchemin anciens (représentant les fichiers JSON-LD de Schema.org et GS1 Vocabulary) sont déroulés par des mains délicates sur une table en bois. À côté, un moine scriptorium (représentant le code Kotlin) les transcrit avec un pinceau dans un livre ouvert (la base de données locale). Le tout dans un style estampe japonaise, lumières douces, détails minutieux. Format: Image unique, paysage.">
+<img src="illustrations/db_load.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Des rouleaux de parchemin anciens (représentant les fichiers JSON-LD de Schema.org et GS1 Vocabulary) sont déroulés, révélant des motifs complexes. Des mains délicates les manipulent.
+Scène 2 (centre): Un moine scriptorium concentré transcrit des symboles complexes des parchemins avec un pinceau sur un grand livre ouvert, symbolisant le parsing et l'insertion des données dans la base de données locale.
+Scène 3 (droite): Le grand livre ouvert rayonne de lumière, des fils dorés (représentant les index et relations) le connectent à un smartphone, symbolisant une DB locale prête à l'emploi.
+Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -186,10 +211,10 @@ Pour les propriétés qui se prêtent à l'extraction automatique ou qui sont de
     *   Exécute la logique métier : consultation de la DB Schema.org/GS1, appel à Gemma 3n pour le raisonnement, appel à ML Kit pour l'extraction de données brutes.
     *   Renvoie les résultats et les prochaines questions à la `WebView`.
 
-<img src="illustrations/ihm.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image. Chaque scène utilise des couleurs vives et chaleureuses, sans aucun texte écrit dans les illustrations elles-mêmes, mais avec des symboles numériques stylisés.
-Scène 1 (gauche): Une main délicate tenant un smartphone. Des ondes sonores stylisées s'échappent du microphone du téléphone, se transformant en motifs de kanji abstraits flottant dans l'air, symbolisant l'input vocal de l'utilisateur et la question posée par l'IA.
-Scène 2 (centre): La même main dirige la caméra du smartphone vers un objet (par exemple, une bouteille de saké avec une étiquette et des motifs de code-barres). Des lignes de scan stylisées et des éclairs de données lumineuses (représentant les processus ML Kit d'OCR et de scan de code-barres) sont superposées artistiquement sur l'image capturée, indiquant l'extraction d'informations.
-Scène 3 (droite): L'écran du smartphone affiche maintenant une fiche d'identité JSON-LD pour le produit, avec des propriétés structurées (nom, description, identifiant unique) clairement agencées dans un style minimaliste. En dessous, des boutons ronds ou carrés avec des motifs simples (ex: un cercle pour 'Oui', un 'X' pour 'Non') sont affichés pour une interaction par clic. De légères flèches stylisées symbolisent le flux de données vers une forme de nuage ou de temple stylisé en arrière-plan (représentant la DB locale).
+<img src="illustrations/ihm_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Une figure humaine stylisée parlant dans un microphone sur un smartphone. Des bulles de dialogue vocales stylisées s'échappent, se transformant en symboles de données numériques claires (sans texte).
+Scène 2 (centre): Des doigts stylisés pointent ou cliquent sur des options abstraites affichées sur un écran de smartphone, représentées par des boutons ronds ou carrés avec des motifs simples (ex: un cercle, un 'X'). Des lignes de données stylisées se connectent du smartphone à des figures abstraites de serveurs ou de bases de données (sans texte).
+Scène 3 (droite): Un pont japonais traditionnel relie deux rives, l'une représentant une interface WebView avec des éléments UI web, l'autre un temple de style japonais symbolisant le code Kotlin natif. Des flux de données colorés traversent le pont, illustrant l'interopérabilité fluide via JSInterface.
 Format: Triptyque combiné en une seule image, paysage.">
 
 ---
@@ -238,7 +263,11 @@ Grâce à ce Document de Provenance, **SchemaForge AI** ouvre la voie à des fon
     *   Tester une nouvelle version de Gemma 3n sur d'anciennes données pour voir les améliorations.
     *   Re-générer une partie de la fiche avec des paramètres différents (via l'interface de "Prompt Lab" ou de "Config") tout en gardant une trace de l'original.
 
-<img src="illustrations/web4_0.png" alt="genere une image : Un moine scriptorium observe attentivement un rouleau de parchemin détaillant un historique de données (inputs, prompts, outputs de l'IA), avec des annotations méticuleuses. Des symboles abstraits d'audit (loupes, sceaux de cire) et des diagrammes de flux d'information flottent autour. L'arrière-plan est un motif de vagues Kanagawa, symbolisant le flux de données, dans un style estampe japonaise. Format: Image unique, paysage.">
+<img src="illustrations/web4_0_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Un rouleau de parchemin digital flottant dans l'air, sur lequel un pinceau (stylisé comme un robot ou une main IA) appose un sceau rouge et traditionnel, symbolisant la certification de provenance IA.
+Scène 2 (centre): Une figure humaine stylisée tenant une carte ou un document, avec des lignes de données s'étendant pour former un arbre généalogique complexe de points et de connexions, représentant l'historique des inputs et des traitements AI.
+Scène 3 (droite): Un moine scriptorium utilisant une loupe stylisée sur un fragment de données, derrière lui un engrenage numérique et un symbole de régénération (ex: un phénix numérique), illustrant la capacité d'audit et de ré-inférence pour l'amélioration.
+Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
@@ -273,6 +302,12 @@ Grâce à ce Document de Provenance, **SchemaForge AI** ouvre la voie à des fon
 *   **Édition Visuelle de Fiches (Mode "Peintre Numérique") :** Permettre à l'utilisateur de cliquer sur une partie de l'image du produit (visualisée sur la WebView) pour que l'IA identifie et suggère les propriétés associées (ex: "Vous pointez le logo. Voulez-vous remplir la propriété `brand` ?").
 *   **Génération de Types Complexes Avancés :** Étendre la capacité de l'IA à guider la création de propriétés complexes Schema.org imbriquées (ex: `address` -> `streetAddress`, `postalCode`, `addressLocality`...).
 *   **Intégration d'Identifiants Uniques Avancés :** Permettre à l'IA de suggérer des formats d'identifiants uniques (GLN pour les organisations, etc.) en fonction du contexte et de valider leur format via ML Kit.
+
+<img src="illustrations/future_triptych.png" alt="genere une image : Triptyque visuel au style estampe japonaise, représentant trois scènes distinctes côte à côte sur une seule image, sans texte interne. Chaque scène utilise des couleurs vives et chaleureuses, avec des motifs de la nature japonaise.
+Scène 1 (gauche): Des mains délicates plantent des graines numériques lumineuses dans un jardin zen stylisé, avec des symboles de code et de données s'élevant, représentant les fondations des futures fonctionnalités.
+Scène 2 (centre): Un grand arbre aux branches étendues, chaque branche portant des fruits lumineux en forme de symboles d'applications mobiles, illustrant de nouvelles capacités et croissances futures.
+Scène 3 (droite): Un horizon lointain de montagnes et de nuages, mais les nuages sont formés de réseaux de données complexes et lumineux, symbolisant l'expansion des possibilités futures dans le paysage numérique.
+Format: Triptyque combiné en une seule image, paysage.">
 
 ---
 
